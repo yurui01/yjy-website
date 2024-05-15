@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --duration: 320s;
+    --gap: 1rem;
+}
+
+@layer utilities {
+    .animate-scrolling-banner-vertical {
+        animation: scrolling-banner-vertical var(--duration) linear infinite;
+    }
+
+    .bg-radial {
+        background-image: radial-gradient(80% 50% at 50% -20%, rgba(0, 24, 51, 0.6), rgba(25, 8, 43, 0.3));
+    }
+
+    @keyframes scrolling-banner-vertical {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(calc(-50% - var(--gap) / 2));
+        }
+    }
+}
