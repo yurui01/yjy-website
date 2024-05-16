@@ -1,6 +1,6 @@
 export const Hero = () => {
   return (
-    <section className="flex min-h-screen flex-nowrap items-center justify-center overflow-hidden md:ml-0 md:w-full lg:overflow-visible flex-col">
+    <section className="flex min-h-screen flex-nowrap items-center justify-center  md:ml-0 md:w-full lg:overflow-visible flex-col">
       <div className="flex overflow-y-hidden isolate max-h-dvh backdrop-brightness-50 bg-black/30">
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 z-40 flex flex-col items-center justify-center px-4 text-center leading-8 md:px-0 pointer-events-none">
           <h1 className="tracking-tight inline font-semibold dark:from-[#FFFFFF] dark:to-[#DCDCDC] text-4xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-b">
